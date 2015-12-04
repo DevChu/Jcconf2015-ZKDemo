@@ -1,0 +1,18 @@
+<zk:zk xmlns="native" xmlns:x="xhtml" xmlns:sh="shadow" xmlns:zk="zk">
+<html sclass="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ZK React Integration</title>
+		<link rel="stylesheet" href="css/zk8_react_demo.css" />
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<script src="js/lib/react.js"></script>
+		<script src="js/lib/JSXTransformer.js"></script>
+		<script src="bower_components/react-bootstrap/react-bootstrap.js"></script>
+		<script src="js/lib/marked.min.js"></script>
+	</head>
+	<body>
+		<x:div id="content" viewModel="@id('vm') @init('org.zkoss.demo.react.ReactVM')"></x:div>
+    	<script type="text/jsx;harmony=true" src="js/demo.js"></script>
+	</body>
+</html>
+</zk:zk>

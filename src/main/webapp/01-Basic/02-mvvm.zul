@@ -1,0 +1,19 @@
+<zk>
+<separator />
+<window border="normal" width="300px" height="300px"
+		title="ZK MVVM" apply="org.zkoss.bind.BindComposer" 
+		viewModel="@id('vm')@init('org.zkoss.demo.basic.ViewModel')">
+    <vbox>
+    		<div>
+        		Input: <textbox value="@bind(vm.input)" />
+    		</div>
+	    <div>
+       		Output: <label value="@load(vm.output)" />
+    		</div>
+    		<div>
+    			<button label="Submit" onClick="@command('save')"/>
+    			<button label="Clear" onClick="@command('clear')"/>
+    		</div>
+    </vbox>
+</window>
+</zk>

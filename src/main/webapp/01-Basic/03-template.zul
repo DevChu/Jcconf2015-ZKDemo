@@ -1,0 +1,15 @@
+<div apply="org.zkoss.demo.basic.TemplateComposer" >
+	<listbox model="${$composer.fruits}">
+		<listhead>
+			<listheader label="Name" sort="auto"/>
+			<listheader label="Weight" sort="auto"/>
+		</listhead>
+		<template name="model">
+			<listitem>
+				<listcell label="${each[0]}"/>
+				<listcell label="${each[1]}"/>
+			</listitem>
+		</template>
+	</listbox>
+</div>
+

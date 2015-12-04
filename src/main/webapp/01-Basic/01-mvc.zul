@@ -1,0 +1,18 @@
+<zk>
+<separator />
+<window border="normal" width="300px" height="300px"
+		title="ZK MVC" apply="org.zkoss.demo.basic.Composer">
+    <vbox>
+    		<div>
+        		Input: <textbox id="input" />
+    		</div>
+	    <div>
+       		Output: <label id="output" />
+    		</div>
+    		<div>
+    			<button id="ok" label="Submit" />
+    			<button id="clear" label="Clear" />
+    		</div>
+    </vbox>
+</window>
+</zk>

@@ -1,0 +1,42 @@
+<?component name="layout" templateURI="layout.zul" ?>
+<?link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" ?>
+<?script src="/resources/js/bootstrap.min.js" ?>
+<zk xmlns:n="native" xmlns:ca="client/attribute" xmlns:w="client"
+	xmlns:sh="shadow">
+	<style src="css/custom-style.css" />
+	<div zclass="demo-feature3"
+		viewModel="@id('vm') @init('org.zkoss.demo.datahandler.IntegrationShowcaseViewModel')">
+		<n:ul class="nav nav-tabs">
+			<sh:apply template="tab" tabId="labelauty" sclass="active" />
+			<sh:apply template="tab" tabId="markdown" />
+			<template name="tab">
+				<n:li class="${sclass} ${tabId}">
+					<n:a href="#${tabId}" aria-controls="${tabId}"
+						role="tab" data-toggle="tab">
+						${tabId}
+					</n:a>
+				</n:li>
+			</template>
+		</n:ul>
+
+		<!-- could also be done in a data-handler - since not reused anywhere just kept it inline -->
+		<script defer="true">
+			jq('.demo-feature3 .nav-tabs a').on('shown.bs.tab', function() {
+				zUtl.fireSized(zk.$('.demo-feature3'));
+			});
+		</script>
+
+		<n:div class="tab-content">
+			<n:div class="tab-pane" id="labelauty">
+				<layout
+					before="/04-Data-Attribute-Handler/template/labelauty-before.zul"
+					after="/04-Data-Attribute-Handler/template/labelauty-after.zul" />
+			</n:div>
+			<n:div class="tab-pane" id="markdown">
+				<layout
+					before="/04-Data-Attribute-Handler/template/markdown-before.zul"
+					after="/04-Data-Attribute-Handler/template/markdown-after.zul" />
+			</n:div>
+		</n:div>
+	</div>
+</zk>

@@ -1,0 +1,15 @@
+<zk xmlns:x="xhtml" xmlns:n="native">
+	<forEach items="@init(catalog.items)" var="item">
+		<div zclass="item-list">
+			<span zclass="item-image">
+				<image src="@load(item.image)" />
+			</span>
+			<label zclass="item-title" value="@load(item.title)" />
+			<label zclass="item-price" value="@load(('$' += item.price += ' USD'))" />
+			<span zclass="seller-icon">
+				<image src="@load(item.seller.icon)" />
+			</span>
+			<label zclass="seller-name" value="@load(item.seller.name)" />
+		</div>
+	</forEach>
+</zk>

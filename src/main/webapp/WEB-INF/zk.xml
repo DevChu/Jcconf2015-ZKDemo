@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+	<client-config>
+		<data-handler>
+			<name>labelauty</name>
+			<link href="/04-Data-Attribute-Handler/scripts/auty/jquery-labelauty.css" rel="stylesheet" />
+			<script src="/04-Data-Attribute-Handler/scripts/auty/jquery-labelauty.js" />
+			<script src="/WEB-INF/scripts/data-labelauty.js" />
+		</data-handler>
+		<data-handler>
+			<name>markdown</name>
+			<script src="/04-Data-Attribute-Handler/scripts/markdown/showdown.min.js" />
+			<script src="/WEB-INF/scripts/data-markdown.js" />
+		</data-handler>	
+	</client-config>
+</zk>

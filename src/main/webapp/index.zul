@@ -1,0 +1,24 @@
+<?link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" ?>
+<?script src="/resources/js/bootstrap.min.js" ?>
+<zk xmlns:n="native" xmlns:ca="client/attribute" xmlns:w="client"
+	xmlns:sh="shadow">
+	<style>
+		.panel a {
+			font-size: 40px
+		}
+	</style>
+	<div>
+		<separator />
+		<n:div class="panel panel-default col-md-8 col-md-offset-2">
+			<n:div class="panel-body">
+				<vlayout hflex="1" spacing="0px" sclass="bgColor">
+					<a href="01-Basic/01-mvc.zul" >Basic MVC</a>
+					<a href="02-UI-Template-Injection/02-example.zul" >Catalog</a>
+					<a href="03-Client-Binding/react.zhtml" >react chat room</a>
+					<a href="04-Data-Attribute-Handler/01-labelauty.zul" >labelauty</a>
+					<a href="04-Data-Attribute-Handler/02-markdown.zul" >markdown</a>
+				</vlayout>
+			</n:div>
+		</n:div>
+	</div>
+</zk>

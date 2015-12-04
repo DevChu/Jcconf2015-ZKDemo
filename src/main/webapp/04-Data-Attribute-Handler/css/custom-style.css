@@ -1,0 +1,95 @@
+/*  panel layout */
+.demo-dh .panel-body .title {
+	font-size: 11px;
+	font-style: normal;
+	color: #878787;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+.demo-dh .bgColor {
+	background-color: #f5f5f5;
+}
+
+.demo-dh .titleBlock {
+/* 	height: 24px; */
+	background-color: white;
+}
+
+.demo-dh .codeSeparator {
+	background-color: #f5f5f5;	
+}
+
+.demo-dh .exampleBlock {
+/* 	height: 271px; */
+}
+
+.demo-dh .exampleBox {
+	display: table-cell;
+	vertical-align: middle;
+	border-color: #dcdcdc;
+	border-width: 1px 1px 2px 1px;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+	border-style: solid;
+/* 	height: 270px; */
+}
+
+
+/*  labelauty */
+.demo-dh .labelautyContent {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.demo-dh .before .labelautyContent .z-vlayout-inner {
+	padding: 10px 0 10px 0 !important;
+}
+
+.demo-dh .z-checkbox-content {
+	font-size: 19px;
+	margin-left: 5px;
+}
+
+.demo-dh .z-checkbox>input {
+	margin-bottom: 7px;
+}
+
+input.labelauty+label {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 12px 15px 12px;
+}
+
+input.labelauty.disable-icon+label>span.labelauty-checked-image {
+	background-image: url(../scripts/auty/images/input-disabled.png);
+}
+
+input.labelauty.disable-icon+label>span.labelauty-unchecked-image {
+	background-image: url(../scripts/auty/images/input-disabled.png);
+}
+
+input.labelauty.terms-icon+label>span.labelauty-checked-image {
+	background-image: url(../scripts/auty/images/terms-checked.png);
+}
+
+input.labelauty.terms-icon+label>span.labelauty-unchecked-image {
+	background-image: url(../scripts/auty/images/terms-unchecked.png);
+}
+
+.z-checkbox input[type=checkbox][disabled=disabled]+label.z-checkbox-content
+	{
+	opacity: 0.5;
+}
+
+/*  markdown */
+.demo-dh .markdownContent {
+	margin: 0 auto 0px auto;
+	width: 90%;
+	height: 220px;
+}
+
+.demo-dh .markdownContent h1 {
+	margin-top: 0px;
+}

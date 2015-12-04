@@ -1,0 +1,17 @@
+<zk xmlns:x="xhtml" xmlns:n="native">
+	<forEach items="@init(catalog.items)" var="item">
+		<x:div sclass="item-grid">
+			<n:div sclass="item-seller">
+				<x:img src="@init(item.seller.icon)" />
+				<x:span textContent="@init(item.seller.name)" sclass="seller-name" />
+			</n:div>
+			<n:div sclass="item-image">
+				<x:img src="@load(item.image)" />
+			</n:div>
+			<n:div sclass="item-info">
+				<x:span sclass="item-title" textContent="@load(item.title)" />
+				<x:span sclass="item-price" textContent="@load(('$' += item.price += ' USD'))" />
+			</n:div>
+		</x:div>
+	</forEach>
+</zk>

@@ -1,0 +1,31 @@
+<?link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" ?>
+<?script src="/resources/js/bootstrap.min.js" ?>
+<zk xmlns:n="native" xmlns:ca="client/attribute" xmlns:w="client"
+	xmlns:sh="shadow">
+	<style src="css/custom-style.css" />
+	<div zclass="demo-dh"
+		viewModel="@id('vm') @init('org.zkoss.demo.datahandler.IntegrationShowcaseViewModel')">
+		<separator />
+		<n:div class="panel panel-default col-md-8 col-md-offset-2">
+			<n:div class="panel-body" id="labelauty">
+				<vlayout hflex="1" spacing="0px" sclass="bgColor">
+					<hlayout hflex="1" spacing="0px" sclass="titleBlock">
+						<label zclass="title" value="DEFAULT" hflex="1" />
+						<separator width="8px" orient="vertical" height="30px"
+							sclass="bgColor" />
+						<label zclass="title" value="INTEGRATED" hflex="1" />
+					</hlayout>
+					<hlayout height="275px" hflex="1" sclass="exampleBlock" spacing="0px">
+						<div hflex="1" vflex="1" sclass="before exampleBox">
+							<sh:apply templateURI="/04-Data-Attribute-Handler/template/labelauty-before.zul" />
+						</div>
+						<separator width="8px" orient="vertical" height="271px" />
+						<div hflex="1" vflex="1" sclass="after exampleBox">
+							<sh:apply templateURI="/04-Data-Attribute-Handler/template/labelauty-after.zul" />
+						</div>
+					</hlayout>
+				</vlayout>
+			</n:div>
+		</n:div>
+	</div>
+</zk>
